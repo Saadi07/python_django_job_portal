@@ -10,6 +10,7 @@ from django.contrib.auth.decorators import login_required
 def home(request):
     return render(request, 'home.html')
 
+    
 
 class Add_Job(CreateView):
     model = Jobs
@@ -61,5 +62,3 @@ class Contact_Us(CreateView):
 def our_services(request):
     return render(request, 'jobs/services.html')    
 
-def error_403(request, exception):
-        return render(request,'jobs/403.html')

@@ -14,4 +14,4 @@ urlpatterns = [
     path('apply/', Apply_Job.as_view(), name='apply'),
 ]
 
-handler403 = 'jobs.views.error_403'
+
